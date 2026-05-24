@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { story } from "../lib/story";
 
 export default function OurStory() {
-  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const itemRefs = useRef<(HTMLElement | null)[]>([]);
   const [revealedIdx, setRevealedIdx] = useState<Set<number>>(new Set());
 
   useEffect(() => {
