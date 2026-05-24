@@ -10,7 +10,7 @@ export default function Footer() {
           fontWeight: 400,
         }}
       >
-        Abigiya &amp; Tetemek
+        Tettemqe &amp; Abigiya
       </div>
       <div
         className="uppercase mb-10"
@@ -31,7 +31,7 @@ export default function Footer() {
           fontSize: "34px",
         }}
       >
-        #AbigiyaAndTetemek
+        #TettemqeAndAbigiya
       </div>
     </footer>
   );

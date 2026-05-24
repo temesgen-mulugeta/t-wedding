@@ -61,7 +61,7 @@ export default function Hero() {
         >
           <Image
             src={photos.hero}
-            alt="Abigiya and Tetemek"
+            alt="Tettemqe and Abigiya"
             fill
             priority
             sizes="100vw"
@@ -121,7 +121,7 @@ export default function Hero() {
             ...animState("0.6s", "1.8s", "cubic-bezier(.16,1,.3,1)"),
           }}
         >
-          <span className="inline-block sm:inline">Abigiya</span>
+          <span className="inline-block sm:inline">Tettemqe</span>
           <span
             className="italic text-white/85 inline-block"
             style={{
@@ -133,7 +133,7 @@ export default function Hero() {
           >
             &amp;
           </span>
-          <span className="inline-block sm:inline">Tetemek</span>
+          <span className="inline-block sm:inline">Abigiya</span>
         </h1>
 
         <div

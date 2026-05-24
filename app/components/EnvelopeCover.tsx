@@ -197,7 +197,7 @@ export default function EnvelopeCover() {
               animation: "fadeUp 1.2s ease 1.3s forwards",
             }}
           >
-            Abigiya &amp; Tetemek
+            Tettemqe &amp; Abigiya
           </div>
 
           {/* Date */}

@@ -31,11 +31,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Abigiya & Tetemek · 26 May 2026",
+  title: "Tettemqe & Abigiya · 26 May 2026",
   description:
-    "Join us as we celebrate the wedding of Abigiya & Tetemek on 26 May 2026 in Addis Ababa.",
+    "Join us as we celebrate the wedding of Tettemqe & Abigiya on 26 May 2026 in Addis Ababa.",
   openGraph: {
-    title: "Abigiya & Tetemek · 26 May 2026",
+    title: "Tettemqe & Abigiya · 26 May 2026",
     description: "Together with our families — you are invited.",
     type: "website",
   },
