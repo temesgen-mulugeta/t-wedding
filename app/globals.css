@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-paper: #f4ebd9;
+  --color-paper-warm: #ede0c4;
+  --color-blush: #f1ddc7;
+  --color-sage: #7a8c6b;
+  --color-sage-deep: #4a5c3d;
+  --color-forest: #2a3a25;
+  --color-gold: #b8945a;
+  --color-gold-deep: #8a6d3f;
+  --color-seal: #8b2929;
+  --color-seal-dark: #5a1818;
+  --color-ink: #1f1812;
+  --color-ink-soft: #3a2f24;
+
+  --font-display: var(--font-italianno);
+  --font-serif: var(--font-cormorant);
+  --font-meta: var(--font-cinzel);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  background: var(--color-paper);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-seal);
+  color: var(--color-paper);
+}
+
+@keyframes kenburns {
+  0% { transform: scale(1.08) translate(0, 0); }
+  100% { transform: scale(1.22) translate(-1.5%, -1.5%); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scrollPulse {
+  0% { opacity: 0; transform: translateX(-50%) translateY(8px); }
+  40% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(-8px); }
+}
+
+@keyframes sealCrack {
+  0% { transform: translateX(0) rotate(0); }
+  100% { transform: translateX(var(--crack-x, 20px)) rotate(var(--crack-r, 8deg)); }
+}
+
+@keyframes flapOpen {
+  0% { transform: rotateX(0); }
+  100% { transform: rotateX(-180deg); }
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
 }
