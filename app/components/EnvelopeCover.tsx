@@ -217,51 +217,54 @@ export default function EnvelopeCover() {
 
           </div>
 
-          {/* Click to enter — pulsing CTA at bottom */}
+          {/* Click to enter — generous pill at bottom with a decorative
+              chevron beneath. Sized for thumb-friendly mobile tap. */}
           <div
-            className="absolute left-1/2 -translate-x-1/2 z-10"
+            className="absolute left-1/2 -translate-x-1/2 z-10 flex flex-col items-center"
             style={{
-              bottom: "11vh",
+              bottom: "8vh",
               opacity: 0,
               animation: "fadeUp 1.4s ease 1.9s forwards",
             }}
           >
             <div
-              className="flex items-center gap-3 rounded-full px-7 py-3.5"
+              className="flex items-center justify-center rounded-full"
               style={{
-                border: "1px solid rgba(184,148,90,0.6)",
-                background: "rgba(0,0,0,0.45)",
-                backdropFilter: "blur(6px)",
+                minWidth: "240px",
+                minHeight: "56px",
+                padding: "16px 38px",
+                border: "1px solid rgba(184,148,90,0.7)",
+                background: "rgba(0,0,0,0.35)",
+                backdropFilter: "blur(10px)",
+                boxShadow:
+                  "0 10px 28px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,235,210,0.1)",
+                color: "var(--color-gold)",
+                fontFamily: "var(--font-meta)",
+                fontSize: "12px",
+                letterSpacing: "0.35em",
+                textTransform: "uppercase",
               }}
             >
-              <span
-                className="uppercase"
-                style={{
-                  fontFamily: "var(--font-meta)",
-                  fontSize: "11px",
-                  letterSpacing: "0.4em",
-                  color: "var(--color-gold)",
-                }}
-              >
-                click to enter
-              </span>
-              <span
-                style={{
-                  color: "var(--color-gold)",
-                  fontSize: "13px",
-                  animation: "arrowPulse 1.8s ease-in-out infinite",
-                  display: "inline-block",
-                }}
-              >
-                →
-              </span>
+              Open invitation
             </div>
+            <span
+              className="mt-4"
+              style={{
+                color: "rgba(184,148,90,0.85)",
+                fontSize: "18px",
+                lineHeight: 1,
+                display: "inline-block",
+                animation: "softBounce 2.2s ease-in-out infinite",
+              }}
+            >
+              ↓
+            </span>
           </div>
 
           <style jsx>{`
-            @keyframes arrowPulse {
-              0%, 100% { transform: translateX(0); }
-              50% { transform: translateX(6px); }
+            @keyframes softBounce {
+              0%, 100% { transform: translateY(0); opacity: 0.55; }
+              50% { transform: translateY(7px); opacity: 1; }
             }
             @keyframes washBloom {
               0% { opacity: 0; transform: scale(0.92); }
